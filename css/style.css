@@ -4,15 +4,13 @@
 body {
   background-color: #333;
   font-family: sans-serif;
-  font-size: 10px;
-}
-
-.container {
   margin: 0 auto;
   width: 420px;
 }
 .arrow {
-  display: inline;
+  display: inline-block;
+  width: 10%;
+  float: right;
 
 }
 nav {
@@ -21,18 +19,20 @@ nav {
   position: fixed;
   width: 420px;
   background-color: #000000;
-
-  padding: 1.25%;
 }
 
 .restaurant-list {
   padding-top: 50px;
   width: 100%;
 }
-.content {
+.location {
   background-color: #b3b6bc;
-  border: .5px solid #000000;
+  border-bottom: .5px solid #000000;
   padding: 5%;
+}
+.content {
+display: inline-block;
+width: 90%;
 }
 .location h1 {
   font-size: 18px;
@@ -44,6 +44,6 @@ nav {
   font-weight: normal;
   padding-top: 1%;
 }
-.content:hover {
+.location:hover {
   background-color: #75777c;
 }
